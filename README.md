@@ -1,28 +1,32 @@
-# IoT-Based Smart Energy Monitoring and Optimization System
-
-### AI-Based Smart Energy Management for Polar Research Stations
+# AI-Driven Smart Energy Management for Polar Research Stations
 
 ## About the Project
 
-This project focuses on developing an intelligent energy monitoring and optimization system for polar research stations.
+AI-Driven Smart Energy Management for Polar Research Stations is an intelligent energy monitoring and optimization system designed to improve energy utilization in polar research environments.
 
-It combines IoT sensors, machine learning and a web-based dashboard to monitor electrical energy consumption and environmental conditions. The system aims to support efficient energy usage and better energy management.
+The project integrates IoT sensors, machine learning, optimization techniques and a web-based dashboard to monitor electrical energy consumption and environmental conditions.
+
+The system uses an ESP32 to collect sensor data, a FastAPI backend to process and manage the data, PostgreSQL for database storage, and a React dashboard to display monitoring results. XGBoost is used for energy demand prediction, while OR-Tools supports energy resource optimization.
 
 ## Features
 
-- **Real-Time Energy Monitoring:** Monitor electrical parameters such as voltage, current and power.
-- **Environmental Monitoring:** Collect temperature, humidity and light intensity data using sensors.
-- **IoT Integration:** Use ESP32 to collect sensor readings and communicate with the backend.
-- **Web Dashboard:** Display energy and environmental data through an interactive interface.
-- **Energy Prediction:** Explore machine learning-based energy consumption prediction.
-- **Energy Optimization:** Work towards improving energy utilization using optimization techniques.
-- **Monitoring and Alerts:** Support identification of unusual energy consumption patterns.
+- **Real-Time Energy Monitoring:** Monitors electrical parameters such as voltage, current, power and energy consumption.
+- **Environmental Monitoring:** Collects temperature, humidity and light intensity using connected sensors.
+- **IoT Integration:** Uses ESP32 to collect sensor readings and communicate with the backend.
+- **AI-Based Energy Prediction:** Uses the XGBoost machine learning algorithm to predict energy demand.
+- **Energy Optimization:** Uses Google OR-Tools to support efficient energy resource allocation.
+- **Interactive Dashboard:** Displays energy and environmental information through a React-based dashboard.
+- **Alerts and Monitoring:** Helps identify unusual energy consumption patterns.
+- **Data Visualization:** Presents energy trends, predictions and monitoring information through graphical reports.
+- **Renewable Energy Management:** Supports monitoring and management of renewable energy resources.
 
 ## Technologies Used
 
 ### Frontend
-- React
+- React.js
 - JavaScript
+- HTML
+- CSS
 
 ### Backend
 - Python
@@ -32,97 +36,137 @@ It combines IoT sensors, machine learning and a web-based dashboard to monitor e
 ### Database
 - PostgreSQL
 
-### Machine Learning and Optimization
+### AI and Optimization
 - XGBoost
-- OR-Tools
+- Google OR-Tools
 
-### Hardware and Sensors
+### IoT and Hardware
 - ESP32
 - DS18B20 Temperature Sensor
 - DHT22 Temperature and Humidity Sensor
 - BH1750 Light Sensor
-- PZEM-004T Energy Monitoring Module
+- PZEM-004T Energy Meter
+
+### Development Tools
+- Visual Studio Code
+- Arduino IDE
+- Git
+- GitHub
 
 ## System Architecture
 
-1. **Sensor Layer:** Sensors collect electrical and environmental readings.
-2. **Controller Layer:** ESP32 reads sensor values and sends data to the backend.
-3. **Backend Layer:** FastAPI handles incoming data and application requests.
-4. **Database Layer:** PostgreSQL stores monitoring information.
-5. **Frontend Layer:** React displays the collected data through dashboards.
-6. **Prediction and Optimization:** Machine learning and optimization techniques support energy management.
+The system follows a layered architecture:
+
+1. **Sensor Layer:** Collects electrical and environmental data using connected sensors.
+2. **Controller Layer:** ESP32 reads sensor values and sends the data to the backend.
+3. **Backend Layer:** FastAPI handles data processing and application operations.
+4. **Database Layer:** PostgreSQL stores the required monitoring information.
+5. **AI and Optimization Layer:** XGBoost performs energy demand prediction, and OR-Tools supports energy optimization.
+6. **Frontend Layer:** React displays the information through an interactive dashboard.
 
 ## Project Structure
 
 ```text
 energy-management-/
-|
-|-- backend/
-|   |-- FastAPI application
-|   |-- Database and API modules
-|
-|-- frontend/
-|   |-- React application
-|
-|-- ARDUINO SENSOR CODE/
-|   |-- ESP32 sensor programs
-|
-|-- .gitignore
+│
+├── ARDUINO SENSOR CODE/
+│
+├── backend/
+│   ├── app/
+│   ├── requirements.txt
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+└── .gitignore
 ```
 
 ## Installation and Setup
-
-### Prerequisites
-- Python
-- Node.js and npm
-- PostgreSQL
-- Git
-- Arduino IDE (for ESP32 sensor integration)
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/sowjanya2237-stack/energy-management-.git
+cd energy-management-
 ```
 
 ### 2. Backend Setup
 
+Open a terminal and navigate to the backend folder.
+
 ```bash
 cd backend
+```
+
+Install the required Python packages.
+
+```bash
 pip install -r requirements.txt
 ```
 
-Configure the PostgreSQL database connection in the backend `.env` file.
+Configure the PostgreSQL database connection using the backend environment configuration.
 
-Start the backend:
+Start the FastAPI server:
 
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+The backend API documentation can be accessed at:
+
+```text
+http://localhost:8000/docs
+```
+
 ### 3. Frontend Setup
 
-Open another terminal:
+Open another terminal and navigate to the frontend folder.
 
 ```bash
 cd frontend
+```
+
+Install the dependencies:
+
+```bash
 npm install
+```
+
+Start the React development server:
+
+```bash
 npm run dev
 ```
 
+Open the local URL displayed in the terminal to access the dashboard.
+
 ### 4. ESP32 Setup
 
-- Open the sensor program in Arduino IDE.
-- Select the appropriate ESP32 board and COM port.
-- Configure the Wi-Fi and backend connection details.
-- Upload the program to the ESP32.
+1. Open the Arduino sensor code using Arduino IDE.
+2. Select the appropriate ESP32 board.
+3. Configure the Wi-Fi credentials.
+4. Configure the backend server address.
+5. Connect the required sensors to the configured GPIO pins.
+6. Upload the program to the ESP32.
+7. Verify sensor readings and data communication with the backend.
 
-## Project Goal
+## Project Outcome
 
-To develop an intelligent energy management solution that helps monitor energy consumption, improve energy efficiency and support reliable energy utilization in polar research environments.
+The completed system combines IoT-based monitoring, AI-driven energy demand prediction and optimization techniques in a unified energy management application.
+
+It provides a centralized dashboard for monitoring energy consumption and environmental conditions while supporting efficient energy utilization in polar research stations.
 
 ## Author
 
-Sowjanya P.
+**Sowjanya P.**
 
-GitHub: https://github.com/sowjanya2237-stack
+B.Tech – Information Technology
+
+[GitHub Profile](https://github.com/sowjanya2237-stack)
+
+## Repository
+
+[AI-Driven Smart Energy Management for Polar Research Stations](https://github.com/sowjanya2237-stack/energy-management-)
