@@ -9,7 +9,7 @@ import {
 
 import "../styles/Machines.css";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://192.168.31.33:8000";
 
 function Machines() {
   const [machines, setMachines] = useState([]);
