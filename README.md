@@ -159,14 +159,3 @@ The completed system combines IoT-based monitoring, AI-driven energy demand pred
 
 It provides a centralized dashboard for monitoring energy consumption and environmental conditions while supporting efficient energy utilization in polar research stations.
 
-## Author
-
-**Sowjanya P.**
-
-B.Tech – Information Technology
-
-[GitHub Profile](https://github.com/sowjanya2237-stack)
-
-## Repository
-
-[AI-Driven Smart Energy Management for Polar Research Stations](https://github.com/sowjanya2237-stack/energy-management-)
