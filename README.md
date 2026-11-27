@@ -158,4 +158,3 @@ Open the local URL displayed in the terminal to access the dashboard.
 The completed system combines IoT-based monitoring, AI-driven energy demand prediction and optimization techniques in a unified energy management application.
 
 It provides a centralized dashboard for monitoring energy consumption and environmental conditions while supporting efficient energy utilization in polar research stations.
-
